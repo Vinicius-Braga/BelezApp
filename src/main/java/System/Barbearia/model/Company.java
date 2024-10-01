@@ -13,8 +13,8 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-@Table(name="Cliente")
-public class Cliente {
+@Table(name="Company")
+public class Company {
       
       @Id
       @GeneratedValue(strategy= GenerationType.AUTO)
@@ -23,6 +23,6 @@ public class Cliente {
       private String phone;
       private String email;
       private String password;
-      private Date bornDate;
-      
+      private String address;
+      private Date dataCadastro;
 }
